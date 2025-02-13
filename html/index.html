@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesom cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Bakery</title>
+  </head>
+
+  <style>
+    body {
+      font-family: "Playfair Display", serif;
+    }
+  </style>
+  <body>
+    <!-- header -->
+    <!-- -------------- -->
+    <div
+      class="h-10 md:h-20 md:w-[90%] m-auto flex justify-between items-center sticky top-0 left-0 right-0 pr-[10%] bg-white mb-8 md:mb-0"
+    >
+      <div class="flex justify-center items-center">
+        <img class="h-10 md:h-16" src="./assets/logo.png" />
+        <p class="text-2xl md:text-3xl font-bold text-amber-900">Cake</p>
+      </div>
+
+      <div
+        class="flex justify-center items-center gap-5 md:gap-10 text-lg text-amber-900 font-bold"
+      >
+        <div class="hidden md:flex justify-center items-center gap-10">
+          <a class="hover:text-pink-700" href="#">Home</a>
+          <a class="hover:text-pink-700" href="#">About</a>
+          <a class="hover:text-pink-700" href="#">Popular</a>
+          <a class="hover:text-pink-700" href="#">Recently</a>
+        </div>
+
+        <div id="modeChange" class="text-2xl md:text-3xl">
+          <i class="fa-regular fa-moon"></i>
+          <!-- <i class="fa-regular fa-sun"></i> -->
+        </div>
+        <button class="md:hidden text-lg md:text-2xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Home section -->
+
+    <div
+      id="home"
+      class="h-[80vh] w-[90%] flex flex-col-reverse md:flex-row justify-center items-center m-auto mb-14 md:bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165]"
+    >
+      <!-- left section -->
+
+      <div
+        class="h-[100%] md:w-[50%] flex justify-center items-center mt-10 md:mt-0"
+      >
+        <div class="text-amber-900 animate-upSlider p-5">
+          <span class="text-3xl md:text-5xl font-medium">Enjoy Delicious</span>
+
+          <div class="flex items-center gap-3 md:gap-5 md:mt-2 mb-5">
+            <div
+              class="h-12 w-12 flex justify-center items-center rounded-full bg-pink-100"
+            >
+              <p class="text-lg md:text-2xl">🎂</p>
+            </div>
+            <span class="text-3xl md:text-5xl font-medium">Cake and Tea</span>
+          </div>
+
+          <p class="font-semibold">Enjoy a good cake with the best tea in</p>
+          <p class="font-semibold">the world and improve your day</p>
+
+          <button
+            class="text-white px-4 py-2 bg-[#ff6b81] flex justify-center animate-bounceTwice items-center gap-3 rounded-4xl mt-7"
+          >
+            Order Now <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- right section -->
+      <div class="h-[100%] md:w-[50%] flex justify-center items-center">
+        <img
+          class="h-[100%] md:h-[60%] animate-downSlider"
+          src="./assets/hero-sec-cake.png"
+        />
+      </div>
+    </div>
+
+    <!-- About section -->
+
+    <div
+      id="about"
+      class="h-[80vh] w-[90%] flex flex-col md:flex-row justify-center items-center m-auto mb-14 md:bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165]"
+    >
+      <!-- left section -->
+
+      <div class="h-[100%] md:w-[50%] flex justify-center items-center">
+        <img
+          class="h-[100%] md:h-[60%] animate-downSlider"
+          src="./assets/hero-sec-cake.png"
+        />
+      </div>
+
+      <!-- right section -->
+
+      <div
+        class="h-[100%] md:w-[50%] flex justify-center items-center mt-10 md:mt-0 relative"
+      >
+        <img
+          class="absolute h-[50%] rotate-y-180 right-5 bottom-5 md:bottom-0 md:right-20"
+          src="./assets/leaf-2.png"
+        />
+        <div class="text-amber-900 animate-upSlider p-5">
+          <div class="flex items-center gap-3 md:gap-5 md:mt-2 mb-5">
+            <span class="text-3xl md:text-5xl font-medium">We Provide</span>
+            <div
+              class="h-12 w-12 flex justify-center items-center rounded-full bg-pink-100"
+            >
+              <p class="text-lg md:text-2xl">🎂</p>
+            </div>
+          </div>
+          <span class="text-3xl md:text-5xl font-medium"
+            >High-quality Cake</span
+          >
+
+          <p class="font-semibold w-[100%] md:w-[60%] mt-8">
+            Come try our delicious cake! They are made with top notch
+            ingredients for a heavenly test. Satisfy your cranings at our store
+            today
+          </p>
+          <!-- <p class="font-semibold">the world and improve your day</p> -->
+
+          <button
+            class="text-white px-4 py-2 bg-[#ff6b81] flex justify-center animate-bounceTwice items-center gap-3 rounded-4xl mt-7"
+          >
+            Order Now <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popular section -->
+
+    <div id="popular" class="h-[80vh] w-[90%] border-2 m-auto my-9"></div>
+
+    <!-- Recently section -->
+
+    <div id="recently" class="h-[80vh] w-[90%] border-2 m-auto my-9"></div>
+  </body>
+</html>

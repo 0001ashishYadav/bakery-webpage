@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer utilities {
+    @keyframes bounceTwice {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  
+    .animate-bounceTwice {
+      animation: bounceTwice 1s 2s ease-in-out 1;
+    }
+  
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  
+    .animate-fadeIn {
+      animation: fadeIn 1.5s ease-in forwards;
+    }
+
+    @keyframes upSlider {
+        0% {
+            transform: translateY(150px);
+            /* filter: blur(3px); */
+            filter:opacity(0);
+        }
+
+        100% {
+            transform: translateY(0px);
+            /* filter: blur(0px); */
+           filter:opacity(20);
+        }
+    }
+
+    .animate-upSlider {
+        animation: upSlider 2s 1 ;
+    }
+
+    @keyframes downSlider {
+        0% {
+            transform: translateY(-100px);
+            filter:opacity(0);
+        }
+
+        100% {
+            transform: translateY(0px);
+            filter:opacity(20);
+        }
+    }
+
+    .animate-downSlider {
+        animation: downSlider 2s 1 ;
+    }
+  }

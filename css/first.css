@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 @layer utilities {
+
+  
     @keyframes bounceTwice {
       0%, 100% {
         transform: translateY(0);
@@ -12,6 +14,19 @@
   
     .animate-bounceTwice {
       animation: bounceTwice 1s 2s ease-in-out 1;
+    }
+
+    @keyframes bounce2 {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  
+    .animate-bounce2 {
+      animation: bounce2 1s 2s ease-in-out 1;
     }
   
     @keyframes fadeIn {
@@ -60,4 +75,49 @@
     .animate-downSlider {
         animation: downSlider 2s 1 ;
     }
+
+    @keyframes rightSlider {
+      0% {
+          transform: translateX(50px);
+          filter:opacity(0);
+      }
+
+      100% {
+          transform: translateY(0px);
+          filter:opacity(20);
+      }
+    }
+
+    
+    .animate-rightSlider {
+      animation: rightSlider 2s 1 ;
+    }
+
+    .animate-downSlider {
+      animation: downSlider 2s 1 ;
   }
+
+  @keyframes leftSlider {
+    0% {
+        transform: translateX(-50px);
+        filter:opacity(0);
+    }
+
+    100% {
+        transform: translateY(0px);
+        filter:opacity(20);
+    }
+  }
+
+  
+  .animate-leftSlider {
+    animation: leftSlider 2s 1 ;
+  }
+  }
+
+
+@theme {
+  --shadow-custom: 10 10px 10px rgba(0, 0, 0, 0.3);
+
+  --shadow: inset 0px 0px 40px rgba(255, 255, 255, 1)
+}

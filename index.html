@@ -191,7 +191,7 @@
 
     <div
       id="popular"
-      class="h-[82vh] w-[90%] m-auto mb-14 pt-5 md:bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165] relative"
+      class="h-[82vh] w-[100%] md:w-[90%] m-auto md:mb-14 md:pt-5 bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165] relative"
     >
       <img
         class="h-[25%] absolute bottom-[-8px] left-0 rotate-x-[-30deg]"
@@ -200,25 +200,27 @@
 
       <p class="text-amber-900 text-3xl font-medium text-center">Popular</p>
 
+      <!-- card sec -->
+
       <div
         id="popular-card-sec"
-        class="h-[60vh] w-[80%] flex justify-evenly items-center m-auto mt-8"
+        class="h-[60vh] w-[80%] flex justify-evenly items-center m-auto mt-2 md:mt-8"
       >
         <!-- card-1 -->
         <div
-          class="h-[100%] w-[30%] shadow-amber-900 shadow-[var(--shadow)] hover:animate-[bounce2_1s_1]"
+          class="h-[100%] md:w-[30%] shadow-amber-900 shadow-[var(--shadow)] hover:animate-[bounce2_1s_1]"
         >
-          <div class="h-[60%] flex justify-center items-center">
+          <div class="md:h-[60%] flex justify-center items-center">
             <img class="h-[80%]" src="./assets/chocolate-cake.png" />
           </div>
 
-          <div class="text-center text-amber-900 pt-5">
+          <div class="text-center text-amber-900 md:pt-5">
             <p class="text-3xl">chocolate</p>
             <p class="text-amber-600">Birth Day Cake</p>
             <p class="font-bold">$ 10.99</p>
 
             <button
-              class="bg-[#ff6b81] text-[#f6cdcd] flex items-center gap-3 py-1 px-8 rounded-full mt-5 m-auto"
+              class="bg-[#ff6b81] text-[#f6cdcd] flex items-center gap-3 py-1 px-8 rounded-full md:mt-5 m-auto"
             >
               <span>Shop</span>
               <!-- <img class="h-[30px]" src="./assets/shopping-icon.png" /> -->
@@ -230,7 +232,7 @@
         <!-- second card -->
 
         <div
-          class="h-[100%] w-[30%] shadow-amber-900 shadow-[var(--shadow)] hover:animate-[bounce2_1s_1]"
+          class="h-[100%] w-[30%] hidden md:block shadow-amber-900 shadow-[var(--shadow)] hover:animate-[bounce2_1s_1]"
         >
           <div class="h-[60%] flex justify-center items-center">
             <img class="h-[80%]" src="./assets/cherry-cup-cake.png" />
@@ -254,7 +256,7 @@
         <!-- third card -->
 
         <div
-          class="h-[100%] w-[30%] shadow-amber-900 shadow-[var(--shadow)] hover:animate-[bounce2_1s_1]"
+          class="h-[100%] w-[30%] hidden md:block shadow-amber-900 shadow-[var(--shadow)] hover:animate-[bounce2_1s_1]"
         >
           <div class="h-[60%] flex justify-center items-center">
             <img class="h-[80%]" src="./assets/blueberry-chese-cake.png" />
@@ -295,9 +297,9 @@
       <!-- left section -->
 
       <div
-        class="h-[100%] md:w-[50%] flex justify-center items-center mt-10 md:mt-0"
+        class="h-[100%] w-[100%] md:w-[50%] flex justify-center items-center mt-10 md:mt-0"
       >
-        <div id="recently-title" class="w-[60%] text-amber-900 p-5">
+        <div id="recently-title" class="md:w-[60%] text-amber-900 p-5">
           <span class="text-3xl md:text-5xl font-medium md:w-[40%]"
             >Our Special
           </span>

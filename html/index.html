@@ -13,6 +13,8 @@
       referrerpolicy="no-referrer"
     />
 
+    <script src="script.js" defer></script>
+
     <!-- google font -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -74,7 +76,7 @@
       <div
         class="h-[100%] md:w-[50%] flex justify-center items-center mt-10 md:mt-0"
       >
-        <div class="text-amber-900 animate-upSlider p-5">
+        <div id="home-left-text" class="text-amber-900 p-5">
           <span class="text-3xl md:text-5xl font-medium">Enjoy Delicious</span>
 
           <div class="flex items-center gap-3 md:gap-5 md:mt-2 mb-5">
@@ -100,7 +102,8 @@
       <!-- right section -->
       <div class="h-[100%] md:w-[50%] flex justify-center items-center">
         <img
-          class="h-[100%] md:h-[60%] animate-downSlider"
+          id="home-img"
+          class="h-[100%] md:h-[60%]"
           src="./assets/hero-sec-cake.png"
         />
       </div>
@@ -118,12 +121,14 @@
         class="h-[100%] md:w-[50%] flex justify-center items-center relative"
       >
         <img
-          class="h-[150px] md:h-[60%] animate-rightSlider md:absolute top-5 right-0"
+          id="about-img-1"
+          class="h-[150px] md:h-[60%] md:absolute top-5 right-0"
           src="./assets/chocolate-cup-cake.png"
         />
 
         <img
-          class="h-[150px] md:h-[60%] animate-rightSlider md:absolute bottom-5 left-0"
+          id="about-img-2"
+          class="h-[150px] md:h-[60%] md:absolute bottom-5 left-0"
           src="./assets/pink-cup-cake.png"
         />
 
@@ -153,7 +158,7 @@
           class="absolute h-[50%] rotate-y-180 right-5 bottom-5 md:bottom-0 md:right-20"
           src="./assets/leaf-2.png"
         />
-        <div class="text-amber-900 animate-leftSlider p-5">
+        <div id="about-title" class="text-amber-900 p-5">
           <div class="flex items-center gap-3 md:gap-5 md:mt-2 mb-5">
             <span class="text-3xl md:text-5xl font-medium">We Provide</span>
             <div
@@ -196,7 +201,8 @@
       <p class="text-amber-900 text-3xl font-medium text-center">Popular</p>
 
       <div
-        class="h-[60vh] w-[80%] flex justify-evenly items-center m-auto mt-8 animate-downSlider"
+        id="popular-card-sec"
+        class="h-[60vh] w-[80%] flex justify-evenly items-center m-auto mt-8"
       >
         <!-- card-1 -->
         <div
@@ -291,7 +297,7 @@
       <div
         class="h-[100%] md:w-[50%] flex justify-center items-center mt-10 md:mt-0"
       >
-        <div class="w-[60%] text-amber-900 animate-upSlider p-5">
+        <div id="recently-title" class="w-[60%] text-amber-900 p-5">
           <span class="text-3xl md:text-5xl font-medium md:w-[40%]"
             >Our Special
           </span>
@@ -316,7 +322,8 @@
       <!-- right section -->
       <div class="h-[100%] md:w-[50%] flex justify-center items-center">
         <img
-          class="h-[100%] md:h-[60%] animate-[rightSlider_2s_1]"
+          id="recently-img"
+          class="h-[100%] md:h-[60%]"
           src="./assets/chocolate-fruit-cake.png"
         />
       </div>

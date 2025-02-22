@@ -24,6 +24,15 @@
       rel="stylesheet"
     />
 
+    <!-- google fonts for phone front page -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>Bakery</title>
   </head>
@@ -33,336 +42,405 @@
       font-family: "Playfair Display", serif;
       scroll-behavior: smooth;
     }
+
+    .phone-fr-pg {
+      font-family: "Great Vibes", serif;
+    }
+
+    .rotate-btn-div {
+      transform: rotate(-6deg);
+    }
   </style>
-  <body>
-    <!-- header -->
-    <!-- -------------- -->
+  <body class="bg-amber-100 md:bg-white">
+    <!-- front page for phone -->
     <div
-      class="h-10 md:h-20 md:w-[90%] m-auto flex justify-between items-center sticky z-50 top-0 left-0 right-0 pr-[10%] bg-white mb-8 md:mb-0"
+      id="ph-en-sec"
+      class="h-[100vh] md:hidden bg-amber-100 flex justify-center items-center relative"
     >
-      <div class="flex justify-center items-center">
-        <img class="h-10 md:h-16" src="./assets/logo.png" />
-        <p class="text-2xl md:text-3xl font-bold text-amber-900">Cake</p>
-      </div>
+      <!-- message sec -->
+      <div>
+        <p class="text-pink-400 text-4xl font-semibold text-center">
+          CLOSER TO LOVE
+        </p>
 
-      <div
-        class="flex justify-center items-center gap-5 md:gap-10 text-lg text-amber-900 font-bold"
-      >
-        <div class="hidden md:flex justify-center items-center gap-10">
-          <a class="hover:text-pink-700" href="#home">Home</a>
-          <a class="hover:text-pink-700" href="#about">About</a>
-          <a class="hover:text-pink-700" href="#popular">Popular</a>
-          <a class="hover:text-pink-700" href="#recently">Recently</a>
-        </div>
+        <p class="text-center">
+          <span class="text-pink-400 text-4xl font-semibold">WITH</span>
+          <span class="phone-fr-pg text-4xl text-amber-700"> every </span>
+          <span class="phone-fr-pg text-6xl font-medium text-amber-700">B</span>
+          <span class="phone-fr-pg text-4xl text-amber-700">ite</span>
+        </p>
 
-        <div id="modeChange" class="text-2xl md:text-3xl">
-          <i class="fa-regular fa-moon"></i>
-          <!-- <i class="fa-regular fa-sun"></i> -->
-        </div>
-        <button class="md:hidden text-lg md:text-2xl">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
-    </div>
+        <p class="text-center text-[10px] text-gray-400 font-semibold">
+          Indulge in the deliciousness of freshly backed
+        </p>
 
-    <!-- Home section -->
+        <p class="text-center text-[10px] text-gray-400 font-semibold">
+          treats to kickstart your morning with joy!
+        </p>
 
-    <div
-      id="home"
-      class="h-[82vh] w-[90%] flex flex-col-reverse md:flex-row justify-center items-center m-auto mb-14 md:bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165]"
-    >
-      <!-- left section -->
-
-      <div
-        class="h-[100%] md:w-[50%] flex justify-center items-center mt-10 md:mt-0"
-      >
-        <div id="home-left-text" class="text-amber-900 p-5">
-          <span class="text-3xl md:text-5xl font-medium">Enjoy Delicious</span>
-
-          <div class="flex items-center gap-3 md:gap-5 md:mt-2 mb-5">
-            <div
-              class="h-12 w-12 flex justify-center items-center rounded-full bg-pink-100"
-            >
-              <p class="text-lg md:text-2xl">🎂</p>
-            </div>
-            <span class="text-3xl md:text-5xl font-medium">Cake and Tea</span>
-          </div>
-
-          <p class="font-semibold">Enjoy a good cake with the best tea in</p>
-          <p class="font-semibold">the world and improve your day</p>
-
+        <!-- button sec -->
+        <div
+          class="h-12 w-[50%] mx-auto mt-7 relative text-white font-semibold"
+        >
+          <div
+            class="h-[100%] w-[100%] absolute bg-[#f4c6b5] rounded-full rotate-btn-div"
+          ></div>
           <button
-            class="text-white px-4 py-2 bg-[#ff6b81] flex justify-center animate-bounceTwice items-center gap-3 rounded-4xl mt-7"
+            id="phone-ent-btn"
+            class="h-[100%] w-[100%] bg-pink-400 rounded-full absolute"
           >
-            Order Now <i class="fa-solid fa-arrow-right"></i>
+            Let's Explore
           </button>
         </div>
       </div>
 
-      <!-- right section -->
-      <div class="h-[100%] md:w-[50%] flex justify-center items-center">
-        <img
-          id="home-img"
-          class="h-[100%] md:h-[60%]"
-          src="./assets/hero-sec-cake.png"
-        />
+      <!-- macaroon png up -->
+
+      <div class="absolute top-14 right-12 animate-[bounce2_2s_1_ease-in]">
+        <img class="h-[100px]" src="./assets/yellow-macaron.png" />
+      </div>
+
+      <!-- macaroon png down -->
+      <div class="absolute bottom-0 animate-[bounce2_2s_1_ease-in]">
+        <img class="h-[180px]" src="./assets/french-macarons.png" />
       </div>
     </div>
 
-    <!-- About section -->
-
-    <div
-      id="about"
-      class="h-[82vh] w-[90%] flex flex-col md:flex-row justify-center items-center m-auto mb-14 md:bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165]"
-    >
-      <!-- left section -->
-
+    <!-- for desktop -->
+    <div id="des-hom-page" class="hidden md:block">
+      <!-- header -->
+      <!-- -------------- -->
       <div
-        class="h-[100%] md:w-[50%] flex justify-center items-center relative"
+        class="h-10 md:h-20 md:w-[90%] m-auto flex justify-between items-center sticky z-50 top-0 left-0 right-0 pr-[10%] bg-white mb-8 md:mb-0"
       >
-        <img
-          id="about-img-1"
-          class="h-[150px] md:h-[60%] md:absolute top-5 right-0"
-          src="./assets/chocolate-cup-cake.png"
-        />
+        <div class="flex justify-center items-center">
+          <img class="h-10 md:h-16" src="./assets/logo.png" />
+          <p class="text-2xl md:text-3xl font-bold text-amber-900">Cake</p>
+        </div>
 
-        <img
-          id="about-img-2"
-          class="h-[150px] md:h-[60%] md:absolute bottom-5 left-0"
-          src="./assets/pink-cup-cake.png"
-        />
+        <div
+          class="flex justify-center items-center gap-5 md:gap-10 text-lg text-amber-900 font-bold"
+        >
+          <div class="hidden md:flex justify-center items-center gap-10">
+            <a class="hover:text-pink-700" href="#home">Home</a>
+            <a class="hover:text-pink-700" href="#about">About</a>
+            <a class="hover:text-pink-700" href="#popular">Popular</a>
+            <a class="hover:text-pink-700" href="#recently">Recently</a>
+          </div>
 
-        <!-- green leaves -->
-
-        <img
-          class="animate-downSlider absolute top-32 left-24"
-          src="./assets/green-leaf-left.png"
-          height="50px"
-          width="50px"
-        />
-
-        <img
-          class="animate-downSlider absolute bottom-32 right-24"
-          src="./assets/green-leaf.png"
-          height="50px"
-          width="50px"
-        />
+          <div id="modeChange" class="text-2xl md:text-3xl">
+            <i class="fa-regular fa-moon"></i>
+            <!-- <i class="fa-regular fa-sun"></i> -->
+          </div>
+          <button class="md:hidden text-lg md:text-2xl">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
       </div>
 
-      <!-- right section -->
+      <!-- Home section -->
 
       <div
-        class="h-[100%] md:w-[50%] flex justify-center items-center mt-10 md:mt-0 relative"
+        id="home"
+        class="h-[300px] md:h-[82vh] w-[90%] flex flex-col-reverse md:flex-row justify-center items-center m-auto mb-14 md:bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165]"
       >
-        <img
-          class="absolute h-[50%] rotate-y-180 right-5 bottom-5 md:bottom-0 md:right-20"
-          src="./assets/leaf-2.png"
-        />
-        <div id="about-title" class="text-amber-900 p-5">
-          <div class="flex items-center gap-3 md:gap-5 md:mt-2 mb-5">
-            <span class="text-3xl md:text-5xl font-medium">We Provide</span>
-            <div
-              class="h-12 w-12 flex justify-center items-center rounded-full bg-pink-100"
-            >
-              <p class="text-lg md:text-2xl">🎂</p>
+        <!-- left section -->
+
+        <div
+          class="h-[50%] md:h-[100%] md:w-[50%] flex justify-center items-center mt-10 md:mt-0"
+        >
+          <div id="home-left-text" class="text-amber-900 p-5">
+            <span class="text-xl md:text-5xl font-medium">Enjoy Delicious</span>
+
+            <div class="flex items-center gap-3 md:gap-5 md:mt-2 mb-5">
+              <div
+                class="h-12 w-12 flex justify-center items-center rounded-full bg-pink-100"
+              >
+                <p class="text-lg md:text-2xl">🎂</p>
+              </div>
+              <span class="text-xl md:text-5xl font-medium">Cake and Tea</span>
             </div>
+
+            <p class="font-semibold">Enjoy a good cake with the best tea in</p>
+            <p class="font-semibold">the world and improve your day</p>
+
+            <button
+              class="text-white px-4 py-2 bg-[#ff6b81] flex justify-center animate-bounceTwice items-center gap-3 rounded-4xl mt-7"
+            >
+              Order Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
           </div>
-          <span class="text-3xl md:text-5xl font-medium"
-            >High-quality Cake</span
-          >
+        </div>
 
-          <p class="font-semibold w-[100%] md:w-[60%] mt-8">
-            Come try our delicious cake! They are made with top notch
-            ingredients for a heavenly test. Satisfy your cranings at our store
-            today
-          </p>
-          <!-- <p class="font-semibold">the world and improve your day</p> -->
+        <!-- right section -->
+        <div
+          class="h-[50%] md:h-[100%] md:w-[50%] flex justify-center items-center"
+        >
+          <img
+            id="home-img"
+            class="h-[80%] md:h-[60%]"
+            src="./assets/hero-sec-cake.png"
+          />
+        </div>
+      </div>
 
-          <!-- <button
+      <!-- About section -->
+
+      <div
+        id="about"
+        class="h-[300px] md:h-[82vh] w-[90%] flex flex-col md:flex-row justify-center items-center m-auto mb-14 md:bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165]"
+      >
+        <!-- left section -->
+
+        <div
+          class="h-[50%] md:h-[100%] md:w-[50%] flex justify-center items-center relative"
+        >
+          <img
+            id="about-img-1"
+            class="h-[150px] md:h-[60%] md:absolute top-5 right-0"
+            src="./assets/chocolate-cup-cake.png"
+          />
+
+          <img
+            id="about-img-2"
+            class="h-[150px] md:h-[60%] md:absolute bottom-5 left-0"
+            src="./assets/pink-cup-cake.png"
+          />
+
+          <!-- green leaves -->
+
+          <img
+            class="animate-downSlider absolute top-32 left-24"
+            src="./assets/green-leaf-left.png"
+            height="50px"
+            width="50px"
+          />
+
+          <img
+            class="animate-downSlider absolute bottom-32 right-24"
+            src="./assets/green-leaf.png"
+            height="50px"
+            width="50px"
+          />
+        </div>
+
+        <!-- right section -->
+
+        <div
+          class="h-[50%] md:h-[100%] md:w-[50%] flex justify-center items-center mt-10 md:mt-0 relative"
+        >
+          <img
+            class="absolute h-[50%] rotate-y-180 right-5 bottom-5 md:bottom-0 md:right-20"
+            src="./assets/leaf-2.png"
+          />
+          <div id="about-title" class="text-amber-900 p-5">
+            <div class="flex items-center gap-3 md:gap-5 md:mt-2 md:mb-5">
+              <span class="text-xl md:text-5xl font-medium">We Provide</span>
+              <div
+                class="h-12 w-12 flex justify-center items-center rounded-full bg-pink-100"
+              >
+                <p class="text-lg md:text-2xl">🎂</p>
+              </div>
+            </div>
+            <span class="text-xl md:text-5xl font-medium"
+              >High-quality Cake</span
+            >
+
+            <p class="font-semibold w-[100%] md:w-[60%] mt-8">
+              Come try our delicious cake! They are made with top notch
+              ingredients for a heavenly test. Satisfy your cranings at our
+              store today
+            </p>
+            <!-- <p class="font-semibold">the world and improve your day</p> -->
+
+            <!-- <button
             class="text-white px-4 py-2 bg-[#ff6b81] flex justify-center animate-bounceTwice items-center gap-3 rounded-4xl mt-7"
           >
             Order Now <i class="fa-solid fa-arrow-right"></i>
           </button> -->
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Popular section -->
-
-    <div
-      id="popular"
-      class="h-[82vh] w-[100%] md:w-[90%] m-auto md:mb-14 md:pt-5 bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165] relative"
-    >
-      <img
-        class="h-[25%] absolute bottom-[-8px] left-0 rotate-x-[-30deg]"
-        src="./assets/leaves-pink-2.png"
-      />
-
-      <p class="text-amber-900 text-3xl font-medium text-center">Popular</p>
-
-      <!-- card sec -->
+      <!-- Popular section -->
 
       <div
-        id="popular-card-sec"
-        class="h-[60vh] w-[80%] flex justify-evenly items-center m-auto mt-2 md:mt-8"
+        id="popular"
+        class="h-[82vh] w-[100%] md:w-[90%] m-auto md:mb-14 md:pt-5 bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165] relative"
       >
-        <!-- card-1 -->
-        <div
-          class="h-[100%] md:w-[30%] shadow-amber-900 shadow-[var(--shadow)] hover:animate-[bounce2_1s_1]"
-        >
-          <div class="md:h-[60%] flex justify-center items-center">
-            <img class="h-[80%]" src="./assets/chocolate-cake.png" />
-          </div>
-
-          <div class="text-center text-amber-900 md:pt-5">
-            <p class="text-3xl">chocolate</p>
-            <p class="text-amber-600">Birth Day Cake</p>
-            <p class="font-bold">$ 10.99</p>
-
-            <button
-              class="bg-[#ff6b81] text-[#f6cdcd] flex items-center gap-3 py-1 px-8 rounded-full md:mt-5 m-auto"
-            >
-              <span>Shop</span>
-              <!-- <img class="h-[30px]" src="./assets/shopping-icon.png" /> -->
-              <i class="fa-solid fa-bag-shopping"></i>
-            </button>
-          </div>
-        </div>
-
-        <!-- second card -->
-
-        <div
-          class="h-[100%] w-[30%] hidden md:block shadow-amber-900 shadow-[var(--shadow)] hover:animate-[bounce2_1s_1]"
-        >
-          <div class="h-[60%] flex justify-center items-center">
-            <img class="h-[80%]" src="./assets/cherry-cup-cake.png" />
-          </div>
-
-          <div class="text-center text-amber-900 pt-5">
-            <p class="text-3xl">cherry</p>
-            <p class="text-amber-600">Cup Cake</p>
-            <p class="font-bold">$ 10.99</p>
-
-            <button
-              class="bg-[#ff6b81] text-[#f6cdcd] flex items-center gap-3 py-1 px-8 rounded-full mt-5 m-auto"
-            >
-              <span>Shop</span>
-              <!-- <img class="h-[30px]" src="./assets/shopping-icon.png" /> -->
-              <i class="fa-solid fa-bag-shopping"></i>
-            </button>
-          </div>
-        </div>
-
-        <!-- third card -->
-
-        <div
-          class="h-[100%] w-[30%] hidden md:block shadow-amber-900 shadow-[var(--shadow)] hover:animate-[bounce2_1s_1]"
-        >
-          <div class="h-[60%] flex justify-center items-center">
-            <img class="h-[80%]" src="./assets/blueberry-chese-cake.png" />
-          </div>
-
-          <div class="text-center text-amber-900 pt-5">
-            <p class="text-3xl">Blueberry</p>
-            <p class="text-amber-600">Cheesecake</p>
-            <p class="font-bold">$ 10.99</p>
-
-            <button
-              class="bg-[#ff6b81] text-[#f6cdcd] flex items-center gap-3 py-1 px-8 rounded-full mt-5 m-auto"
-            >
-              <span>Shop</span>
-              <!-- <img class="h-[30px]" src="./assets/shopping-icon.png" /> -->
-              <i class="fa-solid fa-bag-shopping"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="h-[40px] w-[120px] flex justify-center items-center gap-3 text-amber-600 m-auto hover:underline mt-5"
-      >
-        <a class="font-semibold" href="#">See more </a>
-        <i class="fa-solid fa-arrow-right"></i>
-      </div>
-    </div>
-
-    <!-- Recently section -->
-
-    <!-- <div id="recently" class="h-[82vh] w-[90%] border-2 m-auto my-9"></div> -->
-
-    <div
-      id="recently"
-      class="h-[82vh] w-[90%] flex flex-col-reverse md:flex-row justify-center items-center m-auto mb-14 md:bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165]"
-    >
-      <!-- left section -->
-
-      <div
-        class="h-[100%] w-[100%] md:w-[50%] flex justify-center items-center mt-10 md:mt-0"
-      >
-        <div id="recently-title" class="md:w-[60%] text-amber-900 p-5">
-          <span class="text-3xl md:text-5xl font-medium md:w-[40%]"
-            >Our Special
-          </span>
-
-          <p class="text-3xl md:text-5xl font-medium">Chocolate Fruit</p>
-
-          <p class="text-3xl md:text-5xl font-medium">Cake</p>
-
-          <p class="font-semibold md:w-[80%] mt-10">
-            Take a look at what's new. And do not deprive yourself of a good
-            cake, enjoy and be happy.
-          </p>
-
-          <button
-            class="text-white px-4 py-2 bg-[#ff6b81] flex justify-center animate-bounceTwice items-center gap-3 rounded-4xl mt-7"
-          >
-            Order Now <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- right section -->
-      <div class="h-[100%] md:w-[50%] flex justify-center items-center">
         <img
-          id="recently-img"
-          class="h-[100%] md:h-[60%]"
-          src="./assets/chocolate-fruit-cake.png"
+          class="h-[25%] absolute bottom-[-8px] left-0 rotate-x-[-30deg]"
+          src="./assets/leaves-pink-2.png"
         />
-      </div>
-    </div>
 
-    <!-- subscribe section -->
+        <p class="text-amber-900 text-3xl font-medium text-center">Popular</p>
 
-    <div
-      class="h-[50vh] w-[85%] rounded-[64px] flex flex-col-reverse md:flex-row justify-center items-center m-auto mb-14 md:bg-amber-950"
-    >
-      <!-- left section -->
+        <!-- card sec -->
 
-      <div class="h-[100%] w-[50%] flex justify-center items-center">
-        <img class="h-[90%]" src="./assets/ckocolate-birthday-cake.png" />
-      </div>
+        <div
+          id="popular-card-sec"
+          class="h-[60vh] w-[80%] flex justify-evenly items-center m-auto mt-2 md:mt-8"
+        >
+          <!-- card-1 -->
+          <div
+            class="h-[100%] md:w-[30%] shadow-amber-900 shadow-[var(--shadow)] hover:animate-[bounce2_1s_1]"
+          >
+            <div class="md:h-[60%] flex justify-center items-center">
+              <img class="h-[80%]" src="./assets/chocolate-cake.png" />
+            </div>
 
-      <!-- right section -->
-      <div class="h-[100%] w-[50%] flex justify-center items-center">
-        <div class="pl-16">
-          <p class="text-white">newsletter</p>
+            <div class="text-center text-amber-900 md:pt-5">
+              <p class="text-3xl">chocolate</p>
+              <p class="text-amber-600">Birth Day Cake</p>
+              <p class="font-bold">$ 10.99</p>
 
-          <p class="text-white text-5xl md:w-[70%]">
-            Subscribe For Offer Update
-          </p>
+              <button
+                class="bg-[#ff6b81] text-[#f6cdcd] flex items-center gap-3 py-1 px-8 rounded-full md:mt-5 m-auto"
+              >
+                <span>Shop</span>
+                <!-- <img class="h-[30px]" src="./assets/shopping-icon.png" /> -->
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- second card -->
 
           <div
-            class="h-[60px] w-[70%] mt-10 flex justify-center items-center gap-16 bg-white rounded-full"
+            class="h-[100%] w-[30%] hidden md:block shadow-amber-900 shadow-[var(--shadow)] hover:animate-[bounce2_1s_1]"
           >
-            <input
-              class="pl-3 text-sm outline-none"
-              type="email"
-              placeholder="Enter email"
-            />
-            <button class="py-2.5 px-6 bg-[#ff6b81] rounded-full text-white">
-              <span class="mr-3">Subscribe</span
-              ><i class="fa-solid fa-paper-plane"></i>
+            <div class="h-[60%] flex justify-center items-center">
+              <img class="h-[80%]" src="./assets/cherry-cup-cake.png" />
+            </div>
+
+            <div class="text-center text-amber-900 pt-5">
+              <p class="text-3xl">cherry</p>
+              <p class="text-amber-600">Cup Cake</p>
+              <p class="font-bold">$ 10.99</p>
+
+              <button
+                class="bg-[#ff6b81] text-[#f6cdcd] flex items-center gap-3 py-1 px-8 rounded-full mt-5 m-auto"
+              >
+                <span>Shop</span>
+                <!-- <img class="h-[30px]" src="./assets/shopping-icon.png" /> -->
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- third card -->
+
+          <div
+            class="h-[100%] w-[30%] hidden md:block shadow-amber-900 shadow-[var(--shadow)] hover:animate-[bounce2_1s_1]"
+          >
+            <div class="h-[60%] flex justify-center items-center">
+              <img class="h-[80%]" src="./assets/blueberry-chese-cake.png" />
+            </div>
+
+            <div class="text-center text-amber-900 pt-5">
+              <p class="text-3xl">Blueberry</p>
+              <p class="text-amber-600">Cheesecake</p>
+              <p class="font-bold">$ 10.99</p>
+
+              <button
+                class="bg-[#ff6b81] text-[#f6cdcd] flex items-center gap-3 py-1 px-8 rounded-full mt-5 m-auto"
+              >
+                <span>Shop</span>
+                <!-- <img class="h-[30px]" src="./assets/shopping-icon.png" /> -->
+                <i class="fa-solid fa-bag-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="h-[40px] w-[120px] flex justify-center items-center gap-3 text-amber-600 m-auto hover:underline mt-5"
+        >
+          <a class="font-semibold" href="#">See more </a>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+
+      <!-- Recently section -->
+
+      <!-- <div id="recently" class="h-[82vh] w-[90%] border-2 m-auto my-9"></div> -->
+
+      <div
+        id="recently"
+        class="h-[300px] md:h-[82vh] w-[90%] flex flex-col-reverse md:flex-row justify-center items-center m-auto mb-14 md:bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165]"
+      >
+        <!-- left section -->
+
+        <div
+          class="h-[50%] md:h-[100%] w-[100%] md:w-[50%] flex justify-center items-center mt-10 md:mt-0"
+        >
+          <div id="recently-title" class="md:w-[60%] text-amber-900 p-5">
+            <span class="text-xl md:text-5xl font-medium md:w-[40%]"
+              >Our Special
+            </span>
+
+            <p class="text-xl md:text-5xl font-medium">Chocolate Fruit</p>
+
+            <p class="text-xl md:text-5xl font-medium">Cake</p>
+
+            <p class="font-semibold md:w-[80%] mt-2 md:mt-10">
+              Take a look at what's new. And do not deprive yourself of a good
+              cake, enjoy and be happy.
+            </p>
+
+            <button
+              class="text-white px-4 py-2 bg-[#ff6b81] flex justify-center animate-bounceTwice items-center gap-3 rounded-4xl mt-7"
+            >
+              Order Now <i class="fa-solid fa-arrow-right"></i>
             </button>
+          </div>
+        </div>
+
+        <!-- right section -->
+        <div
+          class="h-[50%] md:h-[100%] md:w-[50%] flex justify-center items-center"
+        >
+          <img
+            id="recently-img"
+            class="h-[100%] md:h-[60%]"
+            src="./assets/chocolate-fruit-cake.png"
+          />
+        </div>
+      </div>
+
+      <!-- subscribe section -->
+
+      <div
+        class="h-[50vh] w-[85%] rounded-[64px] flex flex-col-reverse md:flex-row justify-center items-center m-auto mb-14 md:bg-amber-950"
+      >
+        <!-- left section -->
+
+        <div class="h-[100%] w-[50%] flex justify-center items-center">
+          <img class="h-[90%]" src="./assets/ckocolate-birthday-cake.png" />
+        </div>
+
+        <!-- right section -->
+        <div class="h-[100%] w-[50%] flex justify-center items-center">
+          <div class="pl-16">
+            <p class="text-white">newsletter</p>
+
+            <p class="text-white text-5xl md:w-[70%]">
+              Subscribe For Offer Update
+            </p>
+
+            <div
+              class="h-[60px] w-[70%] mt-10 flex justify-center items-center gap-16 bg-white rounded-full"
+            >
+              <input
+                class="pl-3 text-sm outline-none"
+                type="email"
+                placeholder="Enter email"
+              />
+              <button class="py-2.5 px-6 bg-[#ff6b81] rounded-full text-white">
+                <span class="mr-3">Subscribe</span
+                ><i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>

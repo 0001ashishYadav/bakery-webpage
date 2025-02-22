@@ -1,3 +1,14 @@
+// phone btn
+
+const phEnSec = document.getElementById("ph-en-sec");
+const desHomPage = document.getElementById("des-hom-page");
+const phEnBtn = document.getElementById("phone-ent-btn");
+
+phEnBtn.addEventListener("click", () => {
+  phEnSec.classList.add("hidden");
+  desHomPage.classList.remove("hidden");
+});
+
 const homeLeftTextConEl = document.getElementById("home-left-text");
 const homeImgEl = document.getElementById("home-img");
 
@@ -11,7 +22,7 @@ const popularCardSecEl = document.getElementById("popular-card-sec");
 const recentlyTitleEl = document.getElementById("recently-title");
 const recentlyImgeEl = document.getElementById("recently-img");
 
-// foe home section ..................
+// for home section ..................
 
 const observer = new IntersectionObserver(
   (entries) => {

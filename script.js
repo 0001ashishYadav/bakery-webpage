@@ -23,6 +23,7 @@ const recentlyTitleEl = document.getElementById("recently-title");
 const recentlyImgeEl = document.getElementById("recently-img");
 
 // for home section ..................
+console.log(window);
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -41,8 +42,10 @@ const observer = new IntersectionObserver(
   { threshold: 0.3 }
 );
 
-observer.observe(homeLeftTextConEl);
-observer.observe(recentlyTitleEl);
+if (window.innerWidth > 320) {
+  observer.observe(homeLeftTextConEl);
+  observer.observe(recentlyTitleEl);
+}
 
 const homeImgObj = new IntersectionObserver(
   (entries) => {
@@ -61,7 +64,9 @@ const homeImgObj = new IntersectionObserver(
   { threshold: 0.3 }
 );
 
-homeImgObj.observe(homeImgEl);
+if (window.innerWidth > 320) {
+  homeImgObj.observe(homeImgEl);
+}
 
 // for about sec ...................
 
@@ -82,9 +87,11 @@ const aboutImgObj = new IntersectionObserver(
   { threshold: 0.3 }
 );
 
-aboutImgObj.observe(aboutImg1El);
-aboutImgObj.observe(aboutImg2El);
-aboutImgObj.observe(recentlyImgeEl);
+if (window.innerWidth > 320) {
+  aboutImgObj.observe(aboutImg1El);
+  aboutImgObj.observe(aboutImg2El);
+  aboutImgObj.observe(recentlyImgeEl);
+}
 
 const aboutTitleObj = new IntersectionObserver(
   (entries) => {
@@ -103,7 +110,9 @@ const aboutTitleObj = new IntersectionObserver(
   { threshold: 0.3 }
 );
 
-aboutTitleObj.observe(aboutTitleEl);
+if (window.innerWidth > 320) {
+  aboutTitleObj.observe(aboutTitleEl);
+}
 
 const popularObj = new IntersectionObserver(
   (entries) => {
@@ -122,4 +131,6 @@ const popularObj = new IntersectionObserver(
   { threshold: 0.3 }
 );
 
-popularObj.observe(popularCardSecEl);
+if (window.innerWidth > 320) {
+  popularObj.observe(popularCardSecEl);
+}

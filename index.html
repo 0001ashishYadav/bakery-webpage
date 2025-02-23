@@ -38,9 +38,9 @@
   </head>
 
   <style>
-    body {
-      font-family: "Playfair Display", serif;
+    * {
       scroll-behavior: smooth;
+      font-family: "Playfair Display", serif;
     }
 
     .phone-fr-pg {
@@ -142,17 +142,17 @@
 
       <div
         id="home"
-        class="h-[300px] md:h-[82vh] w-[90%] flex flex-col-reverse md:flex-row justify-center items-center m-auto mb-14 md:bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165]"
+        class="h-[300px] shadow-[var(--shadow)] md:shadow-none mt-20 md:mt-0 md:h-[82vh] w-[90%] flex flex-col-reverse md:flex-row justify-center items-center m-auto mb-14 md:bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165]"
       >
         <!-- left section -->
 
         <div
-          class="h-[50%] md:h-[100%] md:w-[50%] flex justify-center items-center mt-10 md:mt-0"
+          class="h-[50%] md:h-[100%] md:w-[50%] translate-y-[-50px] md:translate-y-[0px] flex justify-center items-center"
         >
           <div id="home-left-text" class="text-amber-900 p-5">
             <span class="text-xl md:text-5xl font-medium">Enjoy Delicious</span>
 
-            <div class="flex items-center gap-3 md:gap-5 md:mt-2 mb-5">
+            <div class="flex items-center gap-3 md:gap-5 md:mt-2 mb-3 md:mb-5">
               <div
                 class="h-12 w-12 flex justify-center items-center rounded-full bg-pink-100"
               >
@@ -161,20 +161,32 @@
               <span class="text-xl md:text-5xl font-medium">Cake and Tea</span>
             </div>
 
-            <p class="font-semibold">Enjoy a good cake with the best tea in</p>
-            <p class="font-semibold">the world and improve your day</p>
+            <p class="font-semibold text-[10px] md:text-xl">
+              Enjoy a good cake with the best tea in
+            </p>
+            <p class="font-semibold text-[10px] md:text-xl">
+              the world and improve your day
+            </p>
 
             <button
-              class="text-white px-4 py-2 bg-[#ff6b81] flex justify-center animate-bounceTwice items-center gap-3 rounded-4xl mt-7"
+              class="text-white px-4 py-2 bg-[#ff6b81] hidden md:flex justify-center animate-bounceTwice items-center gap-3 rounded-4xl mt-4 md:mt-7"
             >
               Order Now <i class="fa-solid fa-arrow-right"></i>
             </button>
+
+            <div class="flex md:hidden items-center justify-center">
+              <button
+                class="text-white px-2 md:px-4 py-1 md:py-2 bg-[#ff6b81] flex justify-center animate-bounceTwice items-center gap-3 rounded-4xl mt-4 md:mt-7"
+              >
+                Order Now <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
           </div>
         </div>
 
         <!-- right section -->
         <div
-          class="h-[50%] md:h-[100%] md:w-[50%] flex justify-center items-center"
+          class="h-[50%] md:h-[100%] md:w-[50%] translate-y-[-50px] md:translate-y-[0px] flex justify-center items-center"
         >
           <img
             id="home-img"
@@ -188,46 +200,40 @@
 
       <div
         id="about"
-        class="h-[300px] md:h-[82vh] w-[90%] flex flex-col md:flex-row justify-center items-center m-auto mb-14 md:bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165]"
+        class="h-[300px] md:h-[82vh] w-[90%] shadow-[var(--shadow-out)] md:shadow-none flex flex-col md:flex-row justify-center items-center m-auto mb-14 md:bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165]"
       >
         <!-- left section -->
 
-        <div
-          class="h-[50%] md:h-[100%] md:w-[50%] flex justify-center items-center relative"
-        >
+        <div class="h-[50%] md:h-[100%] w-[100%] md:w-[50%] relative">
           <img
             id="about-img-1"
-            class="h-[150px] md:h-[60%] md:absolute top-5 right-0"
+            class="h-[150px] md:h-[60%] absolute top-5 right-0"
             src="./assets/chocolate-cup-cake.png"
           />
 
           <img
             id="about-img-2"
-            class="h-[150px] md:h-[60%] md:absolute bottom-5 left-0"
+            class="h-[150px] md:h-[60%] absolute bottom-5 left-0"
             src="./assets/pink-cup-cake.png"
           />
 
           <!-- green leaves -->
 
           <img
-            class="animate-downSlider absolute top-32 left-24"
+            class="h-[20px] md:h-[50px] absolute bottom-0 md:top-32 md:left-24"
             src="./assets/green-leaf-left.png"
-            height="50px"
-            width="50px"
           />
 
           <img
-            class="animate-downSlider absolute bottom-32 right-24"
+            class="h-[20px] md:h-[50px] absolute top-0 right-0 md:top-[62vh] md:bottom-32 md:right-24"
             src="./assets/green-leaf.png"
-            height="50px"
-            width="50px"
           />
         </div>
 
         <!-- right section -->
 
         <div
-          class="h-[50%] md:h-[100%] md:w-[50%] flex justify-center items-center mt-10 md:mt-0 relative"
+          class="h-[50%] md:h-[100%] md:w-[50%] flex justify-center items-center md:mt-0 relative"
         >
           <img
             class="absolute h-[50%] rotate-y-180 right-5 bottom-5 md:bottom-0 md:right-20"
@@ -246,7 +252,9 @@
               >High-quality Cake</span
             >
 
-            <p class="font-semibold w-[100%] md:w-[60%] mt-8">
+            <p
+              class="font-semibold text-[10px] md:text-xl w-[100%] md:w-[60%] mt-2 md:mt-8"
+            >
               Come try our delicious cake! They are made with top notch
               ingredients for a heavenly test. Satisfy your cranings at our
               store today
@@ -266,14 +274,16 @@
 
       <div
         id="popular"
-        class="h-[82vh] w-[100%] md:w-[90%] m-auto md:mb-14 md:pt-5 bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165] relative"
+        class="h-[82vh] w-[100%] md:w-[90%] m-auto md:mb-14 md:pt-5 md:bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165] relative"
       >
         <img
-          class="h-[25%] absolute bottom-[-8px] left-0 rotate-x-[-30deg]"
+          class="h-[25%] absolute bottom-[-8px] hidden md:block left-0 rotate-x-[-30deg]"
           src="./assets/leaves-pink-2.png"
         />
 
-        <p class="text-amber-900 text-3xl font-medium text-center">Popular</p>
+        <p class="text-amber-900 text-xl md:text-3xl font-medium text-center">
+          Popular
+        </p>
 
         <!-- card sec -->
 
@@ -283,19 +293,22 @@
         >
           <!-- card-1 -->
           <div
-            class="h-[100%] md:w-[30%] shadow-amber-900 shadow-[var(--shadow)] hover:animate-[bounce2_1s_1]"
+            class="h-[100%] w-[100%] md:w-[30%] shadow-amber-900 shadow-[var(--shadow)] hover:animate-[bounce2_1s_1]"
           >
-            <div class="md:h-[60%] flex justify-center items-center">
-              <img class="h-[80%]" src="./assets/chocolate-cake.png" />
+            <div class="h-[60%] flex justify-center items-center">
+              <img
+                class="h-[100%] md:h-[80%]"
+                src="./assets/chocolate-cake.png"
+              />
             </div>
 
             <div class="text-center text-amber-900 md:pt-5">
-              <p class="text-3xl">chocolate</p>
+              <p class="text-xl md:text-3xl">chocolate</p>
               <p class="text-amber-600">Birth Day Cake</p>
               <p class="font-bold">$ 10.99</p>
 
               <button
-                class="bg-[#ff6b81] text-[#f6cdcd] flex items-center gap-3 py-1 px-8 rounded-full md:mt-5 m-auto"
+                class="bg-[#ff6b81] text-[#f6cdcd] flex items-center gap-3 py-1 px-8 rounded-full mt-4 md:mt-5 m-auto"
               >
                 <span>Shop</span>
                 <!-- <img class="h-[30px]" src="./assets/shopping-icon.png" /> -->
@@ -367,12 +380,12 @@
 
       <div
         id="recently"
-        class="h-[300px] md:h-[82vh] w-[90%] flex flex-col-reverse md:flex-row justify-center items-center m-auto mb-14 md:bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165]"
+        class="h-[300px] md:h-[82vh] w-[90%] shadow-[var(--shadow)] md:shadow-none flex flex-col-reverse md:flex-row justify-center items-center m-auto mb-14 md:bg-linear-to-tl from-[#b66d7828] to-[#ff6b8165]"
       >
         <!-- left section -->
 
         <div
-          class="h-[50%] md:h-[100%] w-[100%] md:w-[50%] flex justify-center items-center mt-10 md:mt-0"
+          class="h-[50%] md:h-[100%] w-[100%] md:w-[50%] flex justify-center items-center"
         >
           <div id="recently-title" class="md:w-[60%] text-amber-900 p-5">
             <span class="text-xl md:text-5xl font-medium md:w-[40%]"
@@ -383,13 +396,15 @@
 
             <p class="text-xl md:text-5xl font-medium">Cake</p>
 
-            <p class="font-semibold md:w-[80%] mt-2 md:mt-10">
+            <p
+              class="font-semibold md:w-[80%] text-[10px] md:text-xl mt-2 md:mt-10"
+            >
               Take a look at what's new. And do not deprive yourself of a good
               cake, enjoy and be happy.
             </p>
 
             <button
-              class="text-white px-4 py-2 bg-[#ff6b81] flex justify-center animate-bounceTwice items-center gap-3 rounded-4xl mt-7"
+              class="text-white px-4 py-2 bg-[#ff6b81] hidden md:flex justify-center animate-bounceTwice items-center gap-3 rounded-4xl mt-7"
             >
               Order Now <i class="fa-solid fa-arrow-right"></i>
             </button>
@@ -411,33 +426,42 @@
       <!-- subscribe section -->
 
       <div
-        class="h-[50vh] w-[85%] rounded-[64px] flex flex-col-reverse md:flex-row justify-center items-center m-auto mb-14 md:bg-amber-950"
+        class="h-[300px] md:h-[50vh] w-[100%] md:w-[85%] rounded-tl-full md:rounded-[64px] flex flex-col md:flex-row justify-center items-center m-auto mb-14 bg-amber-950"
       >
         <!-- left section -->
 
-        <div class="h-[100%] w-[50%] flex justify-center items-center">
-          <img class="h-[90%]" src="./assets/ckocolate-birthday-cake.png" />
+        <div
+          class="h-[50%] md:h-[100%] w-[90%] md:w-[50%] flex justify-center items-center"
+        >
+          <img
+            class="h-[100%] md:h-[90%]"
+            src="./assets/ckocolate-birthday-cake.png"
+          />
         </div>
 
         <!-- right section -->
-        <div class="h-[100%] w-[50%] flex justify-center items-center">
-          <div class="pl-16">
+        <div
+          class="h-[50%] md:h-[100%] w-[90%] md:w-[50%] flex justify-center items-center"
+        >
+          <div class="md:pl-16">
             <p class="text-white">newsletter</p>
 
-            <p class="text-white text-5xl md:w-[70%]">
+            <p class="text-white text-xl md:text-5xl md:w-[70%]">
               Subscribe For Offer Update
             </p>
 
             <div
-              class="h-[60px] w-[70%] mt-10 flex justify-center items-center gap-16 bg-white rounded-full"
+              class="h-[30px] md:h-[60px] w-[90%] md:w-[70%] text-sm mt-5 md:mt-10 flex justify-center items-center bg-white rounded-full"
             >
               <input
-                class="pl-3 text-sm outline-none"
+                class="pl-3 text-sm outline-none w-[56.5%] md:w-[60%]"
                 type="email"
                 placeholder="Enter email"
               />
-              <button class="py-2.5 px-6 bg-[#ff6b81] rounded-full text-white">
-                <span class="mr-3">Subscribe</span
+              <button
+                class="md:py-2.5 px-2 md:px-6 bg-[#ff6b81] rounded-full text-white"
+              >
+                <span class="mr-1 md:mr-3">Subscribe</span
                 ><i class="fa-solid fa-paper-plane"></i>
               </button>
             </div>

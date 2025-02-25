@@ -23,7 +23,7 @@ const recentlyTitleEl = document.getElementById("recently-title");
 const recentlyImgeEl = document.getElementById("recently-img");
 
 // for home section ..................
-console.log(window);
+// console.log(window);
 
 const observer = new IntersectionObserver(
   (entries) => {
